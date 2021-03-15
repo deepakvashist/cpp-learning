@@ -4,9 +4,8 @@
 #include <fstream>
 #include <sstream>
 
-std::vector<std::vector<int> > readAndGetBoardData(std::string boardFilePath)
-{
-    std::vector<std::vector<int> > board;
+std::vector <std::vector<int>> readAndGetBoardData(std::string boardFilePath) {
+    std::vector <std::vector<int>> board;
 
     std::ifstream boardFile(boardFilePath);
 
@@ -33,9 +32,8 @@ std::vector<std::vector<int> > readAndGetBoardData(std::string boardFilePath)
     return board;
 }
 
-int main()
-{
-    std::vector<std::vector<int> > board = readAndGetBoardData("./1.board");
+int main() {
+    std::vector <std::vector<int>> board = readAndGetBoardData("./1.board");
 
     for (int i = 0; i < board.size(); i++) {
         for (int x = 0; x < board[i].size(); x++) {
