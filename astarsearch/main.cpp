@@ -40,7 +40,7 @@ void printBoard(const std::vector<std::vector<int> > &board) {
 }
 
 int heuristicManhattanDistance(int xa, int ya, int xb, int yb) {
-    return (xb - xa) + (yb - xb);
+    return std::abs(xb - xa) + std::abs(yb - xb);
 }
 
 std::vector<std::vector<int> > search(std::vector<std::vector<int> > &board, int initPoints[2], int goalPoints[2]) {
