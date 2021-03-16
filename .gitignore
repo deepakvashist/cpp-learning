@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/c++,macos,visualstudiocode,jetbrains
-# Edit at https://www.toptal.com/developers/gitignore?templates=c++,macos,visualstudiocode,jetbrains
+# Created by https://www.toptal.com/developers/gitignore/api/c++,macos,jetbrains,visualstudiocode,cmake
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,macos,jetbrains,visualstudiocode,cmake
 
 ### C++ ###
 # Prerequisites
@@ -41,6 +41,24 @@
 *.exe
 *.out
 *.app
+
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+CMakeUserPresets.json
+
+### CMake Patch ###
+# External projects
+*-prefix/
 
 ### JetBrains ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -185,6 +203,4 @@ Temporary Items
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/c++,macos,visualstudiocode,jetbrains
-
-.idea/
+# End of https://www.toptal.com/developers/gitignore/api/c++,macos,jetbrains,visualstudiocode,cmake
